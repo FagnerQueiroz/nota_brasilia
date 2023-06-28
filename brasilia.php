@@ -1,3 +1,4 @@
+<?php
 date_default_timezone_set('America/Sao_Paulo');
 require 'xmlseclibs.php';
 use RobRichards\XMLSecLibs\XMLSecurityDSig;
@@ -10,49 +11,7 @@ $url = 'https://df.issnetonline.com.br/webservicenfse204/nfse.asmx';
  $url = 'https://www.issnetonline.com.br/apresentacao/df/webservicenfse204/nfse.asmx';   
 }
 $action = 'http://nfse.abrasf.org.br/GerarNfse';
-/*'ccm' =>$dados->inscricao_municipal,
-'cnpj'=>$dados->cnpj_emitente,
-'cpf'=>$dados->cpf_login,
-'senha'=>$dados->senha,
-'aliquota'=>$dados->aliquota_issqn,
-'servico'=>$dados->codigo_servico,
-'situacao'=>$_tributacao_operacao,
-'valor'=>$dados->valor,
-'base'=>$dados->valor_base,
-'ir'=>$dados->valor_ir_retido,
-'pis'=>$dados->valor_pis_retido,
-'cofins'=>$dados->valor_cofins_retido,
-'csll'=>$dados->valor_csll_retido,
-'inss'=>$dados->valor_contribuicao_inss,
-'retencao_iss'=>$dados->retencao_iss,
 
-'incentivo_fiscal'=>'',
-'cod_municipio_prestacao_servico'=>$dados->cod_municipio_prestacao_servico,
-'cod_pais_prestacao_servico'=>'',
-'cod_municipio_incidencia'=>$dados->cod_municipio_prestacao_servico,
-'descricaoNF'=>$dados->descricao_servico,
-'tomador_tipo'=>$dados->tomador_tipo,
-'tomador_cnpj'=>$dados->tomador_cnpj,
-'tomador_email'=>$dados->tomador_email,
-'tomador_ie'=>$dados->tomador_inscricao_estadual,
-'tomador_im'=>$dados->tomador_inscricao_municipal,
-'tomador_razao'=>$dados->tomador_razao_social,
-'tomador_endereco'=>$dados->tomador_logradouro,
-'tomador_numero'=>$dados->tomador_numero_logradouro,
-'tomador_complemento'=>$dados->tomador_complemento,
-'tomador_bairro'=>$dados->tomador_bairro,
-'tomador_CEP'=>$dados->tomador_CEP,
-'tomador_cod_cidade'=>$dados->codigo_municipio,
-'tomador_fone'=>$dados->telefone,
-'tomador_ramal'=>'',
-'tomador_fax'=>'',
-'nfse_substituida'=>$dados->nfse_substituida,
-'rps_num'=>$dados->numero_rps,
-'rps_serie'=>$dados->serie,
-'rps_tipo'=>1,
-'rps_dia'=>$dia,
-'rps_mes'=>$mes,
-'rps_ano'=>$ano*/
 
 if($dados->enquadramento_tributario > 2){
     $OptanteSimplesNacional=2;
