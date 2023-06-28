@@ -6,3 +6,5 @@ require 'xmlseclibs.php';
 use RobRichards\XMLSecLibs\XMLSecurityDSig;
 
 use RobRichards\XMLSecLibs\XMLSecurityKey;
+
+### Ajuste para sua necessidade ###
