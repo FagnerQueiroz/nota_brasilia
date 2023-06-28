@@ -2,7 +2,7 @@ date_default_timezone_set('America/Sao_Paulo');
 require 'xmlseclibs.php';
 use RobRichards\XMLSecLibs\XMLSecurityDSig;
 use RobRichards\XMLSecLibs\XMLSecurityKey;
-/*$dados='DEVE CONTER SEU OBJETO COM AS INFORMAÇÕES DA NOTA*/
+/*$dados='DEVE CONTER SEU OBJETO COM AS INFORMAÇÕES DA NOTA'*/
 header('Content-Type: text/xml');
 if($dados->ambiente_nfse == 1){
 $url = 'https://df.issnetonline.com.br/webservicenfse204/nfse.asmx';
